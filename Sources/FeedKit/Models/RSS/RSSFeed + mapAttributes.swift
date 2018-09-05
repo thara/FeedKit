@@ -165,6 +165,12 @@ extension RSSFeed {
             if  self.items?.last?.dublinCore == nil {
                 self.items?.last?.dublinCore = DublinCoreNamespace()
             }
+        
+        case .rssChannelItemHatenaBookmarkCount:
+            
+            if  self.items?.last?.hatena == nil {
+                self.items?.last?.hatena = HatenaNamespace()
+            }
 
         case
         .rssChannelItunesAuthor,
@@ -523,6 +529,12 @@ extension RSSFeed {
             
             if  self.items?.last?.dublinCore == nil {
                 self.items?.last?.dublinCore = DublinCoreNamespace()
+            }
+        
+        case .rdfItemHatenaBookmarkCount:
+            
+            if  self.items?.last?.hatena == nil {
+                self.items?.last?.hatena = HatenaNamespace()
             }
             
         default: break

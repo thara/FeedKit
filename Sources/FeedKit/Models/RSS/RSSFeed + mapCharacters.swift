@@ -109,6 +109,7 @@ extension RSSFeed {
         case .rssChannelItemDublinCoreRelation:                     self.items?.last?.dublinCore?.dcRelation                        = self.items?.last?.dublinCore?.dcRelation?.appending(string) ?? string
         case .rssChannelItemDublinCoreCoverage:                     self.items?.last?.dublinCore?.dcCoverage                        = self.items?.last?.dublinCore?.dcCoverage?.appending(string) ?? string
         case .rssChannelItemDublinCoreRights:                       self.items?.last?.dublinCore?.dcRights                          = self.items?.last?.dublinCore?.dcRights?.appending(string) ?? string
+        case .rssChannelItemHatenaBookmarkCount:                    self.items?.last?.hatena?.bookmarkCount                         = Int(string)
         case .rssChannelItunesAuthor:                               self.iTunes?.iTunesAuthor                                       = self.iTunes?.iTunesAuthor?.appending(string) ?? string
         case .rssChannelItunesBlock:                                self.iTunes?.iTunesBlock                                        = self.iTunes?.iTunesBlock?.appending(string) ?? string
         case .rssChannelItunesExplicit:                             self.iTunes?.iTunesExplicit                                     = self.iTunes?.iTunesExplicit?.appending(string) ?? string
@@ -201,6 +202,7 @@ extension RSSFeed {
         case .rdfItemDublinCoreRelation:                            self.items?.last?.dublinCore?.dcRelation                        = self.items?.last?.dublinCore?.dcRelation?.appending(string) ?? string
         case .rdfItemDublinCoreCoverage:                            self.items?.last?.dublinCore?.dcCoverage                        = self.items?.last?.dublinCore?.dcCoverage?.appending(string) ?? string
         case .rdfItemDublinCoreRights:                              self.items?.last?.dublinCore?.dcRights                          = self.items?.last?.dublinCore?.dcRights?.appending(string) ?? string
+        case .rdfItemHatenaBookmarkCount:                           self.items?.last?.hatena?.bookmarkCount                         = Int(string)
         default: break
         }
         

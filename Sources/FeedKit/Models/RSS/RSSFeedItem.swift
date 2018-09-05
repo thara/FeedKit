@@ -192,6 +192,9 @@ public class RSSFeedItem {
     /// Media RSS is a new RSS module that supplements the <enclosure>
     /// capabilities of RSS 2.0.
     public var media: MediaNamespace?
+    
+    /// Hatena bookmark metadata
+    public var hatena: HatenaNamespace?
 }
 
 // MARK: - Equatable
@@ -206,6 +209,7 @@ extension RSSFeedItem: Equatable {
             lhs.content == rhs.content &&
             lhs.description == rhs.description &&
             lhs.dublinCore == rhs.dublinCore &&
+            lhs.hatena == rhs.hatena &&
             lhs.enclosure == rhs.enclosure &&
             lhs.guid == rhs.guid &&
             lhs.iTunes == rhs.iTunes &&
