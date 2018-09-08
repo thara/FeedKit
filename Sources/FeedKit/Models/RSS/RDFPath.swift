@@ -87,5 +87,6 @@ enum RDFPath: String {
     case rdfItemDublinCoreRights                        = "/rdf:RDF/item/dc:rights"
     
     case rdfItemHatenaBookmarkCount                     = "/rdf:RDF/item/hatena:bookmarkcount"
+    case rdfItemContentEncoded                          = "/rdf:RDF/item/content:encoded"
     
 }
